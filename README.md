@@ -13,7 +13,7 @@ Directory theme for https://caddyserver.com/
 
 Let's assume the root folder of your caddyserver is `/var/www/html/` (the path thus being http://localhost/)
 
-Be sure you have `browse` enable on the *Caddyfile*  
+Be sure you have `browse` enable in the *Caddyfile*  
 ```
 browse / /var/www/html/theme/caddyr.tpl
 ```
