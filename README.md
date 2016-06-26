@@ -2,7 +2,7 @@
 Directory theme for https://caddyserver.com/
 
 *cadyr* is a simple theme for your [Caddy](https://caddyserver.com/) directory listing.
-![demo](path "./caddyr.png")
+![demo](path "https://github.com/Drakirus/Caddyr/blob/master/caddyr.png")
 
  **Features**
 
