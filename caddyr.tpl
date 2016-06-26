@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Index of {{.Name}}</title>
-    <link rel="stylesheet" href="/theme/style.css" />
-    <script src="/theme/app.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="/Caddyr/style.css" />
+    <script src="/Caddyr/app.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <h1>Index of {{.Path}}</h1>
@@ -15,7 +15,7 @@
 
           <tr>
             <th>
-              <img src="/theme/icons/default.png" alt="[ICO]">
+              <img src="/Caddyr/icons/default.png" alt="[ICO]">
             </th>
             <th>Name</th>
             <th>Last modified</th>
@@ -26,8 +26,7 @@
           <tr>
             <td valign="top">
               <a href="..">
-                <img src="/theme/icons/up.png" alt="[ICO]">
-                <!-- <img src="/theme/icons/Generic Book File Type.png" alt="[ICO]"> -->
+                <img src="/Caddyr/icons/up.png" alt="[ICO]">
               </a>
             </td>
             <td>
@@ -43,10 +42,10 @@
             <td valign="top">
               <a href="{{.URL}}">
                 {{if .IsDir}}
-                <img src="/theme/icons/dir.png" alt="[IMG]"></a>
+                <img src="/Caddyr/icons/dir.png" alt="[IMG]"></a>
               {{else}}
               <script>
-                document.write('<img src="/theme/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/theme/icons/default.png\'"/>');
+                document.write('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
               </script>
               {{end}}
             </td>
