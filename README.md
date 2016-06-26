@@ -18,7 +18,7 @@ Be sure you have `browse` enable in the *Caddyfile*
 browse / /var/www/html/theme/caddyr.tpl
 ```
 
-*Installation*
+**Installation**
 
 ```bash
 cd /var/www/html/
