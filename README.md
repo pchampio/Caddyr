@@ -1,7 +1,7 @@
 # Caddyr
 Directory theme for https://caddyserver.com/
 
-**cadyr** is a simple theme for your [Caddy-Server](https://caddyserver.com/) directory listing.
+**cadyr** is a simple theme for your [Caddy-Server](https://caddyserver.com/) directory listing.  
 ![demo](https://github.com/Drakirus/Caddyr/blob/master/caddyr.png)
 
  **Features**
@@ -29,7 +29,8 @@ rm -rf .git
 Then open your favorite browser, **IE**
 
 ### Credits
-Based off [apaxy](https://github.com/AdamWhitcroft/Apaxy) by Adam Whitcroft  
-And [directory-theme](https://github.com/jfrazelle/directory-theme) by Jess Frazelle
+Based off [apaxy](https://github.com/AdamWhitcroft/Apaxy) by Adam Whitcroft 
+And [directory-theme](https://github.com/jfrazelle/directory-theme) by Jess Frazelle  
+Icon pack by [Icons8](https://icons8.com/)
 
 
