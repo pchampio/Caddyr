@@ -30,7 +30,7 @@ rm -rf .git
 Then open your favorite browser, **IE**
 
 ### Credits
-Based off [apaxy](https://github.com/AdamWhitcroft/Apaxy) by Adam Whitcroft 
+Based off [apaxy](https://github.com/AdamWhitcroft/Apaxy) by Adam Whitcroft  
 And [directory-theme](https://github.com/jfrazelle/directory-theme) by Jess Frazelle  
 Icon pack by [Icons8](https://icons8.com/)
 
