@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////
-//                       UTC + 2 for my country                       //
+//                       UTC + 2h for my country                      //
+                            var toLocal=2
 ////////////////////////////////////////////////////////////////////////
-var toLocal=2
 
 // pretty size function
 function humanFileSize(bytes, si) {
