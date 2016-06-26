@@ -11,7 +11,7 @@ Directory theme for https://caddyserver.com/
 
 ### Caddy Setup
 
-Let's assume the root folder of your caddyserver is `/var/www/html/` (the path thus being http://localhost/)
+Let's assume the root folder of your caddyserver is `/var/www/html/` (the path thus being *http://localhost/*)
 
 Be sure you have `browse` enable in the *Caddyfile*  
 ```
