@@ -15,7 +15,7 @@ Let's assume the root folder of your caddyserver is `/var/www/html/` (the path t
 
 Be sure you have `browse` enable in the *Caddyfile*  
 ```
-browse / /var/www/html/theme/caddyr.tpl
+browse / /var/www/html/Caddyr/caddyr.tpl
 ```
 
 **Installation**
@@ -23,6 +23,7 @@ browse / /var/www/html/theme/caddyr.tpl
 ```bash
 cd /var/www/html/
 git clone https://github.com/Drakirus/Caddyr.git
+cd Caddyr/
 rm README.md caddyr.png
 rm -rf .git
 ```
