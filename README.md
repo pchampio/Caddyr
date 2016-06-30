@@ -1,7 +1,7 @@
 # Caddyr
 Directory theme for https://caddyserver.com/
 
-> forked form [demo](https://github.com/jfrazelle/directory-theme)  
+> forked form [jfrazelle](https://github.com/jfrazelle/directory-theme)  
 
 **cadyr** is a simple theme for your [Caddy-Server](https://caddyserver.com/) directory listing.  
 ![demo](https://raw.githubusercontent.com/Drakirus/Caddyr/master/caddyr.png)
