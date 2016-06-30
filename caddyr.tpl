@@ -76,7 +76,7 @@
     </div>
   </body>
   <footer>
-    <b>Caddyr</b> by <a href="https://github.com/Drakirus/">@drakirus</a></br>
+    <b>Caddyr</b> by <a href="https://github.com/Drakirus/Caddyr">@drakirus</a></br>
     <a href="https://icons8.com">  Icon pack by Icons8</a>
   </footer>
 </html>
