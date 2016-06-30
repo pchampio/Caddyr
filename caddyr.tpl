@@ -10,18 +10,21 @@
   <body>
     <h1>Index of {{.Path}}</h1>
     <div class="wrapper">
-      <table id="directory">
-        <tbody>
-
+      <form>
+        <input id="searchTerm" name="filter" type="search" onkeyup="doSearch()">
+      </form>
+      <table>
+        <thead>
           <tr>
             <th>
               <img src="/Caddyr/icons/default.png" alt="[ICO]">
             </th>
-            <th>Name</th>
-            <th>Last modified</th>
-            <th>Size</th>
+            <th><a id="link-name" >Name</a></th>
+            <th><a id="link-time" >Modified </a></th>
+            <th><a id="link-size" >Size</a></th>
           </tr>
-
+        </thead>
+          <tbody id="dataTable">
           {{if .CanGoUp}}
           <tr>
             <td valign="top">
@@ -33,7 +36,7 @@
               <a href="..">Go up a dir</a>
             </td>
             <td></td>
-            <td align="right">Directory</td>
+            <td align="right">&mdash;</td>
           </tr>
           {{end}}
 
