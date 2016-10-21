@@ -10,6 +10,7 @@ Directory theme for https://caddyserver.com/
 
 - custom styling of the default directory indexing
 - changes "Last modified" column to display time as time since (ex. 2 minutes ago, 4 days ago, etc)
+- videos files are open in a player (only for mobile)
 
 ### Caddy Setup
 
