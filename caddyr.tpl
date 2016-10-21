@@ -11,7 +11,7 @@
     <h1>Index of {{.Path}}</h1>
     <div class="wrapper">
       <form>
-        <input id="searchTerm" name="filter" type="search" onkeyup="doSearch()">
+        <input id="searchTerm" name="filter" type="search" autocapitalize="none" onkeyup="doSearch()">
       </form>
       <table>
         <thead>
@@ -41,35 +41,44 @@
           {{end}}
 
           {{range .Items}}
-          <tr>
-            <td valign="top">
-              <a href="{{.URL}}">
-                {{if .IsDir}}
-                <img src="/Caddyr/icons/dir.png" alt="[IMG]"></a>
-              {{else}}
-              <script>
-                document.write('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
-              </script>
-              {{end}}
-            </td>
-            <td>
-              <a href="{{.URL}}">{{.Name}}</a>
-            </td>
-            <td>
-              <script>
-                document.write(prettyDate("{{.ModTime}}"));
-              </script>
-            </td>
-            <td align="right">
               {{if not .IsDir}}
-              <script>
-                document.write(humanFileSize({{.Size}}));
-              </script>
-              {{else}}
-              Directory
+              <a class="play" href="intent:{{.URL}}#Intent;scheme=file;action=android.intent.action.VIEW;end;"target="_blank">
               {{end}}
-            </td>
-          </tr>
+            <tr>
+              <td valign="top">
+                <a href="{{.URL}}">
+                  {{if .IsDir}}
+                  <img src="/Caddyr/icons/dir.png" alt="[IMG]"></a>
+                {{else}}
+                <script>
+                  document.write('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
+                </script>
+                {{end}}
+              </td>
+              <td>
+                <a href="{{.URL}}">{{.Name}}</a>
+
+
+              </td>
+              <td>
+                <script>
+                  document.write(prettyDate("{{.ModTime}}"));
+                </script>
+              </td>
+              <td align="right">
+                {{if not .IsDir}}
+                <script>
+                  document.write(humanFileSize({{.Size}}));
+                </script>
+                {{else}}
+                Directory
+                {{end}}
+              </td>
+              {{if not .IsDir}}
+              </a>
+              {{end}}
+            </tr>
+          </a>
           {{end}}
         </tbody>
       </table>
@@ -79,5 +88,9 @@
     <b>Caddyr</b> by <a href="https://github.com/Drakirus/Caddyr">@drakirus</a></br>
     <a href="https://icons8.com">  Icon pack by Icons8</a>
   </footer>
+
+  <script type="text/javascript" charset="utf-8">
+    console.log(window.location);
+  </script>
 </html>
 <!-- vim:set ft=html: -->

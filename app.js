@@ -63,6 +63,22 @@ function doSearch() {
   }
 }
 
+function detectmob() {
+ if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
   var LKname = document.getElementById("link-name");
@@ -84,5 +100,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     LKsize.href="?sort=size&amp;order=desc";
   }else{
     LKsize.href="?sort=size&amp;order=asc";
+  }
+
+  // if is on a mobile then play the video on a player
+  if (!detectmob()) {
+    [].forEach.call(document.querySelectorAll('.play'), function (el) {
+      el.style.display = 'none';
+    });
   }
 });
