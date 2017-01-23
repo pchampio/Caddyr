@@ -41,6 +41,7 @@
           {{end}}
 
           {{range .Items}}
+            {{if ne .Name "Caddyr" }}
               {{if not .IsDir}}
               <a class="play" href="intent:{{.URL}}#Intent;scheme=file;action=android.intent.action.VIEW;end;"target="_blank">
               {{end}}
@@ -51,7 +52,7 @@
                   <img src="/Caddyr/icons/dir.png" alt="[IMG]"></a>
                 {{else}}
                 <script>
-                  document.write('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
+                  document.wr{{end}}ite('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
                 </script>
                 {{end}}
               </td>
@@ -80,6 +81,7 @@
             </tr>
           </a>
           {{end}}
+        {{end}}
         </tbody>
       </table>
     </div>
