@@ -24,7 +24,7 @@
             <th><a id="link-size" >Size</a></th>
           </tr>
         </thead>
-          <tbody id="dataTable">
+        <tbody id="dataTable">
           {{if .CanGoUp}}
           <tr>
             <td valign="top">
@@ -41,10 +41,10 @@
           {{end}}
 
           {{range .Items}}
-            {{if ne .Name "Caddyr" }}
-              {{if not .IsDir}}
-              <a class="play" href="intent:{{.URL}}#Intent;scheme=file;action=android.intent.action.VIEW;end;"target="_blank">
-              {{end}}
+          {{if ne .Name "Caddyr" }}
+          {{if not .IsDir}}
+          <a class="play" href="intent:{{.URL}}#Intent;scheme=file;action=android.intent.action.VIEW;end;"target="_blank">
+            {{end}}
             <tr>
               <td valign="top">
                 <a href="{{.URL}}">
@@ -52,7 +52,7 @@
                   <img src="/Caddyr/icons/dir.png" alt="[IMG]"></a>
                 {{else}}
                 <script>
-                  document.wr{{end}}ite('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
+                  document.write('<img src="/Caddyr/icons/'+extension("{{.Name}}")+'.png" alt="[IMG]" onerror="this.src=\'/Caddyr/icons/default.png\'"/>');
                 </script>
                 {{end}}
               </td>
@@ -76,23 +76,22 @@
                 {{end}}
               </td>
               {{if not .IsDir}}
-              </a>
-              {{end}}
-            </tr>
-          </a>
-          {{end}}
+            </a>
+            {{end}}
+          </tr>
         {{end}}
-        </tbody>
-      </table>
-    </div>
-  </body>
-  <footer>
-    <b>Caddyr</b> by <a href="https://github.com/Drakirus/Caddyr">@drakirus</a></br>
-    <a href="https://icons8.com">  Icon pack by Icons8</a>
-  </footer>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
+</body>
+<footer>
+  <b>Caddyr</b> by <a href="https://github.com/Drakirus/Caddyr">@drakirus</a></br>
+  <a href="https://icons8.com">  Icon pack by Icons8</a>
+</footer>
 
-  <script type="text/javascript" charset="utf-8">
-    console.log(window.location);
-  </script>
+<script type="text/javascript" charset="utf-8">
+  console.log(window.location);
+</script>
 </html>
 <!-- vim:set ft=html: -->
